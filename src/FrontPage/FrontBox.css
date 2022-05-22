@@ -1,0 +1,32 @@
+body{
+ padding: 0;
+ margin: 0;
+ font-family: sans-serif;
+ height: 100vh;
+ background-color: aqua;
+ /* max-width: 500px; */
+
+}
+section{
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ background-attachment: fixed;
+}
+section .box{
+ position: relative;
+ max-width: 600px;
+ padding: 50px;
+ box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+ overflow: hidden;
+ color: #000;
+}
+section .box h1{
+ position: relative;
+ margin:  0 0 20px;
+ padding: 0;
+ text-transform: uppercase;
+ z-index: 2;
+}
