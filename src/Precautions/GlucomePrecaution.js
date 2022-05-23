@@ -1,13 +1,13 @@
 import React from 'react'
 import { Button, Col, Dropdown, Form } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-
-function LiverSerosis() {
+function GlucomePrecaution() {
   return (
     <div>
+      {' '}
       <section>
         <div className='box'>
-          <p style={{ textAlign: 'center' }}>LIVER</p>
+          <p style={{ textAlign: 'center' }}>GLUCOMA</p>
           <Form.Group className='mb-3' controlId='formBasicAge'>
             <Form.Label>Age</Form.Label>
             <Form.Control type='number' placeholder='Age' />
@@ -66,17 +66,21 @@ function LiverSerosis() {
             />
           </Col>
           <Button variant='primary' type='submit'>
-            <Link
-              to='/LiverSe'
-              style={{ textDecoration: 'none', color: 'white' }}
-            >
-              Submit
-            </Link>
+            Submit
           </Button>
+          <p>
+            Precaution :{' '}
+            <strong style={{ color: 'steelblue' }}>
+              {' '}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              molestias omnis cum modi fuga aspernatur, velit exercitationem
+              iusto sunt corrupti.
+            </strong>
+          </p>
         </div>
       </section>
     </div>
   )
 }
 
-export default LiverSerosis
+export default GlucomePrecaution

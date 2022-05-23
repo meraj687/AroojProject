@@ -2,11 +2,15 @@ import React from 'react'
 import { Card } from 'react-bootstrap'
 import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import Contact from './ContactInformation/Contact'
+import { Random } from 'react-animated-text'
 
 // import Check from './FrontPage/Check'
 import FrontBox from './FrontPage/FrontBox'
 import FrontPage from './FrontPage/FrontPage'
 import Gallary from './FrontPage/Gallary'
+import GlucomePrecaution from './Precautions/GlucomePrecaution'
+import LeucemiaPrecaution from './Precautions/LeucemiaPrecaution'
+import LiverPrecaution from './Precautions/LiverPrecaution'
 import Fever from './Symptoms/Fever'
 import Glucoma from './Symptoms/Glucoma'
 import Leucamia from './Symptoms/Leucamia'
@@ -56,11 +60,26 @@ function App() {
           <Route exact path='/Fever' element={<Fever />} />
           <Route exact path='/Symptoms' element={<SymptomsPage />} />
           <Route exact path='/Contact' element={<Contact />} />
+          <Route exact path='/LiverSe' element={<LiverPrecaution />} />
+          <Route exact path='/Leuco' element={<LeucemiaPrecaution />} />
+          <Route exact path='/Gluca' element={<GlucomePrecaution />} />
+          <Route exact path='/FeverP' element={<GlucomePrecaution />} />
         </Routes>
       </Router>
-      <Card.Footer className='text-muted' style={{ textAlign: 'center' }}>
-        DESIGN BY AROOJ LATIEF
+      <br />
+
+      <Card.Footer
+        className='text-muted'
+        style={{
+          textAlign: 'center',
+          fontFamily: 'monospace',
+          letterSpacing: '5px',
+        }}
+      >
+        {/* DESIGN BY AROOJ LATIEF */}
+        <Random text='DESIGN BY AROOJ LATIEF' />
       </Card.Footer>
+
       {/* <FrontBox /> */}
     </div>
   )

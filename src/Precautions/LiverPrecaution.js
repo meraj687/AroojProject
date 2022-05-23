@@ -1,8 +1,7 @@
 import React from 'react'
 import { Button, Col, Dropdown, Form } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
 
-function LiverSerosis() {
+function LiverPrecaution() {
   return (
     <div>
       <section>
@@ -66,17 +65,21 @@ function LiverSerosis() {
             />
           </Col>
           <Button variant='primary' type='submit'>
-            <Link
-              to='/LiverSe'
-              style={{ textDecoration: 'none', color: 'white' }}
-            >
-              Submit
-            </Link>
+            Submit
           </Button>
+          <p>
+            Precaution :{' '}
+            <strong style={{ color: 'steelblue' }}>
+              {' '}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              molestias omnis cum modi fuga aspernatur, velit exercitationem
+              iusto sunt corrupti.
+            </strong>
+          </p>
         </div>
       </section>
     </div>
   )
 }
 
-export default LiverSerosis
+export default LiverPrecaution

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Col, Dropdown, Form } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 function Leucamia() {
   return (
@@ -65,7 +66,12 @@ function Leucamia() {
             />
           </Col>
           <Button variant='primary' type='submit'>
-            Submit
+            <Link
+              to='/Leuco'
+              style={{ textDecoration: 'none', color: 'white' }}
+            >
+              Submit
+            </Link>
           </Button>
         </div>
       </section>

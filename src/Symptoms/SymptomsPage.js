@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button, Dropdown, Form } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
@@ -66,6 +66,17 @@ function SymptomsPage() {
                 </Dropdown.Menu>
               </Dropdown>
             </Form.Group>
+            <p style={{ color: 'grey', padding: '5px' }}>
+              *{' '}
+              <strong>
+                {' '}
+                We aim to describe a method that combines standardized
+                vocabularies, clinical expertise, and natural language
+                processing to generate comprehensive symptom vocabularies and
+                identify symptom information in EHR notes
+              </strong>
+            </p>
+
             {/* <Form.Group className='mb-3' controlId='formBasicAge'>
               <Form.Label>Age</Form.Label>
               <Form.Control type='number' placeholder='Age' />
