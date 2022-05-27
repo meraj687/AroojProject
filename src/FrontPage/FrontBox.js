@@ -44,10 +44,7 @@ function FrontBox() {
               <Form.Check type='checkbox' label='Check me out' />
             </Form.Group>
             <Button variant='primary' type='submit'>
-              <Link
-                to='/Symptoms'
-                style={{ textDecoration: 'none', color: 'white' }}
-              >
+              <Link to='/Dc' style={{ textDecoration: 'none', color: 'white' }}>
                 Submit
               </Link>
             </Button>

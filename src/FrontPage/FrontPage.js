@@ -7,6 +7,7 @@ import Typewriter from 'react-typewriter-effect'
 
 import Gallary from './Gallary'
 import { Link, Router } from 'react-router-dom'
+import { FaBeer, FaInstagram, FaFacebook, FaVoicemail } from 'react-icons/fa'
 
 function FrontPage() {
   return (
@@ -33,10 +34,21 @@ function FrontPage() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
-            <Nav className='me-auto'>
-              <Nav.Link href='#home'>
-                <Link to='/' style={{ textDecoration: 'none', color: 'grey' }}>
+            <Nav className='me-auto' style={{ textTransform: 'uppercase' }}>
+              {/* <Nav.Link href='#home'>
+                <Link
+                  to='/Symptoms'
+                  style={{ textDecoration: 'none', color: 'grey' }}
+                >
                   Home
+                </Link>
+              </Nav.Link> */}
+              <Nav.Link href='#home'>
+                <Link
+                  to='/Dc'
+                  style={{ textDecoration: 'none', color: 'grey' }}
+                >
+                  Disease And condition
                 </Link>
               </Nav.Link>
               <Nav.Link href='#link'>
@@ -47,7 +59,7 @@ function FrontPage() {
                   Gallary
                 </Link>
               </Nav.Link>
-              <NavDropdown title='Information' id='basic-nav-dropdown'>
+              {/* <NavDropdown title='Information' id='basic-nav-dropdown'>
                 <NavDropdown.Item href='#action/3.1'>
                   <Link
                     to='/Contact'
@@ -56,18 +68,32 @@ function FrontPage() {
                     Contact ☎️
                   </Link>
                 </NavDropdown.Item>
-                <NavDropdown.Item href='#action/3.2'>Email 📧</NavDropdown.Item>
-                {/* <NavDropdown.Item href='#action/3.3'>
+                <NavDropdown.Item href='#action/3.2'>Email 📧</NavDropdown.Item> */}
+              {/* <NavDropdown.Item href='#action/3.3'>
                   Instagram
                 </NavDropdown.Item> */}
-                {/* <NavDropdown.Divider /> */}
-                {/* <NavDropdown.Item href='#action/3.4'>
+              {/* <NavDropdown.Divider /> */}
+              {/* <NavDropdown.Item href='#action/3.4'>
                   Separated link
                 </NavDropdown.Item> */}
-              </NavDropdown>
+              {/* </NavDropdown> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
+        {/* <Navbar.Collapse
+          className='justify-content-end'
+          style={{ padding: '5px' }}
+        >
+          <Navbar.Text style={{ fontSize: '30px' }}>
+            <FaInstagram />
+          </Navbar.Text>
+          <Navbar.Text style={{ fontSize: '25px' }}>
+            <FaFacebook />
+          </Navbar.Text>
+          <Navbar.Text style={{ fontSize: '20px' }}>
+            <FaVoicemail />
+          </Navbar.Text>
+        </Navbar.Collapse> */}
       </Navbar>
     </>
   )
